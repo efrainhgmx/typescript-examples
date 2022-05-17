@@ -2,6 +2,16 @@
 Guía para el uso correcto y avanzado de TypeScript
 
 ### Comandos más utilizados
+Instalar TypeScript:
+Normalmente muchos proyectos ya vienen con configuracion de TS. 
+Para instalar verifica la siguiente liga: https://www.typescriptlang.org/download
+
+Instalar en un proyecto: 
+`$ npm install typescript --save-dev`
+
+Instalar de manera global:
+`$ npm install -g typescript.`
+
 Para transpilar un código **ts** a **js**. Se utiliza el siguiente comando:
 
 `$ tsc file.ts` // Transpila JS
