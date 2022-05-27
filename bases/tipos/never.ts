@@ -1,7 +1,7 @@
 (() => {
 
     //El uso de never no permite que se siga ejecutando el código que sigue.
-
+    //Una función never termina usualmente con un error
     const error = (message: string):never => {
         throw new Error(message)
     }
