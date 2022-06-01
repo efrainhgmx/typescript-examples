@@ -7,11 +7,11 @@
     };
     flash = {
         name: 'Otro nombre',
-        age: 25,
+        //age: 25,
         powers: ['Volar', 'Cantar'],
-        getNombre() {
+        /* getNombre() {
             return this.name;
-        }
+        } */
     };
     console.log(flash);
 })();
