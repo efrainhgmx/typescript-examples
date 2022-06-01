@@ -7,7 +7,7 @@
     };
     flash = {
         name: 'Otro nombre',
-        //age: 25,
+        age: 25,
         powers: ['Volar', 'Cantar'],
         getName() {
             return this.name;
