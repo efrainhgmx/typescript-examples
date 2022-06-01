@@ -9,9 +9,9 @@
         name: 'Otro nombre',
         //age: 25,
         powers: ['Volar', 'Cantar'],
-        /* getNombre() {
+        getName() {
             return this.name;
-        } */
+        }
     };
-    console.log(flash);
+    console.log(flash.getName());
 })();
