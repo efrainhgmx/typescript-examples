@@ -8,7 +8,9 @@
     const letters: string[] = ['A', 'B', 'C', 'D'];
     const viilian = ['Omega', 'Dormamu', 'Duende Verde'];
 
-    viilian.forEach( v => console.log(v.toUpperCase()))
+    viilian.forEach( v => console.log(v.toUpperCase()));
+    number.forEach( v => console.log(v));
+
     letters.push('E');
     console.log(letters)
 })();
