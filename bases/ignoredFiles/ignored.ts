@@ -1,0 +1,1 @@
+console.log("File ignored by TS")
