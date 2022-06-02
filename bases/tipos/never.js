@@ -16,3 +16,4 @@
     //Esta linea no se ejecuta
     console.log("HOLA MUNDO");
 })();
+//# sourceMappingURL=never.js.map

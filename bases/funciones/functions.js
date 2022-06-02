@@ -11,3 +11,4 @@
     //En TS el tipo de retorno de la función es la que domina
     const heroName = returnName();
 })();
+//# sourceMappingURL=functions.js.map
