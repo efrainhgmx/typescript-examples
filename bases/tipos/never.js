@@ -1,7 +1,5 @@
 "use strict";
 (() => {
-    //El uso de never no permite que se siga ejecutando el código que sigue.
-    //Una función never termina usualmente con un error
     const error = (message) => {
         throw new Error(message);
     };
@@ -13,7 +11,6 @@
     };
     console.log(errorOrNumber("ErrorOrNumber"));
     error('Auxilio');
-    //Esta linea no se ejecuta
     console.log("HOLA MUNDO");
 })();
 //# sourceMappingURL=never.js.map

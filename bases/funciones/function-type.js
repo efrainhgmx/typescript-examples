@@ -6,8 +6,6 @@
     let myFunction;
     let mySecondFunction;
     let myThirdFunction;
-    /* myFunction = 10;
-    console.log(myFunction); */
     myFunction = addNumber;
     console.log(myFunction(1, 2));
     mySecondFunction = greet;
