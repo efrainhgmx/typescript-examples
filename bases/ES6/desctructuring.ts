@@ -23,7 +23,7 @@
     } = avengers;
 
     const printAvenger = ({activo, poder, ironman, ...rest}:AvangersType) => {
-        console.log(activo, poder, ironman, rest)
+       // console.log(activo, poder, ironman, rest)
     }
 
     printAvenger(avengers)
@@ -31,5 +31,5 @@
     const avengerArr: [string, boolean, number] = ['Cap', true, 1520.15];
     const [capitan , hulk, power] = avengerArr;
 
-    console.log({hulk, capitan, power})
+    //console.log({hulk, capitan, power})
 })()
