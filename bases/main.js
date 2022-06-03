@@ -30,7 +30,6 @@ var __rest = (this && this.__rest) || function (s, e) {
 })();
 (() => {
     const getName = () => {
-        console.log("name");
     };
     getName();
 })();

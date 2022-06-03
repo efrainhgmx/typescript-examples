@@ -1,7 +1,7 @@
 (() => {
     
     const getName = () => {
-        console.log("name")
+        //console.log("name")
     }
 
     getName();
