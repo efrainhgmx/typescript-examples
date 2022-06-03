@@ -101,5 +101,8 @@
   //IGNORED FILES
   "exclude": [
     "ignoredFiles/*.ts"
+  ],
+  "include": [
+    "ES6"
   ]
 }
