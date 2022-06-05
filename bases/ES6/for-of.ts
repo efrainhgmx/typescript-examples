@@ -23,11 +23,11 @@
 
     for (let i = 0; i < avengers.length; i++) {
         const avenger = avengers[i];
-        console.log(avenger)
+        //console.log(avenger)
     }
 
     for (const avenger of avengers) {
-        console.log(avenger);
+        //console.log(avenger);
     }
 
 })()

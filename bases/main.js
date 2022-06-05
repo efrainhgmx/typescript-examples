@@ -42,10 +42,8 @@ var __rest = (this && this.__rest) || function (s, e) {
     const avengers = [ironman, thor, captainamerica];
     for (let i = 0; i < avengers.length; i++) {
         const avenger = avengers[i];
-        console.log(avenger);
     }
     for (const avenger of avengers) {
-        console.log(avenger);
     }
 })();
 (() => {
