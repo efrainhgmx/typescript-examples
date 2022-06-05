@@ -10,6 +10,18 @@
         }
     }
 
+    class FlyingAvenger extends Avenger {
+        flying;
+
+        constructor(name, power) {
+            //Super llama al construcutor de la clase a la que extiende
+            super(name, power)
+            this.flying = true;
+        }
+    }
+
     const hulk = new Avenger('Hulk', 9001);
+    const falcon = new FlyingAvenger('Falcon', 2000);
     console.log(hulk)
+    console.log(falcon);
 })()
