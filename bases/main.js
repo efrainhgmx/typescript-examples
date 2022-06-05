@@ -35,6 +35,11 @@ var __rest = (this && this.__rest) || function (s, e) {
         name: 'Steve Rogers',
         weapon: 'Shield',
     };
+    const thor, { name: , 'Thor': , weapon: , 'Mjolnir':  };
+    const avengers = [ironman, thor, captainamerica];
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+    }
 })();
 (() => {
     const getName = () => {
