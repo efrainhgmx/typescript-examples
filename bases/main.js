@@ -27,6 +27,16 @@ var __rest = (this && this.__rest) || function (s, e) {
     const [capitan, hulk, power] = avengerArr;
 })();
 (() => {
+    const ironman = {
+        name: 'Tony Stark',
+        weapon: 'Armoursuit'
+    };
+    const captainamerica = {
+        name: 'Steve Rogers',
+        weapon: 'Shield',
+    };
+})();
+(() => {
     const getName = () => {
     };
     getName();
