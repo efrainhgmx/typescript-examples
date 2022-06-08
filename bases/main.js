@@ -6,9 +6,14 @@
             this.team = team;
             this.realName = realName;
         }
+        static getAverage() {
+            return this.name;
+        }
+        bio() {
+            return `${this.name} ${this.team}`;
+        }
     }
     Avenger.averageAge = 35;
     const antman = new Avenger('Antman', 'Avengers', 'Scott Lang');
-    console.log(antman);
 })();
 //# sourceMappingURL=main.js.map
