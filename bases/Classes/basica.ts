@@ -15,12 +15,17 @@
                 public realName: string,
             ) {}
         
-        public bio() {
+        private bio() {
             return `${ this.name } ${ this.team }`
+        }
+
+        public getAvenger() {
+            return this.bio()
         }
     }
 
     const antman : Avenger = new Avenger('Antman', 'Avengers', 'Scott Lang');
     //console.log(Avenger.getAverage())
+    console.log(antman.getAvenger())
     
 })();
