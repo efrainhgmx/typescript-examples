@@ -26,6 +26,6 @@
 
     const antman : Avenger = new Avenger('Antman', 'Avengers', 'Scott Lang');
     //console.log(Avenger.getAverage())
-    console.log(antman.getAvenger())
+    //console.log(antman.getAvenger())
     
 })();

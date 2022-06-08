@@ -18,6 +18,5 @@
     }
     Avenger.averageAge = 35;
     const antman = new Avenger('Antman', 'Avengers', 'Scott Lang');
-    console.log(antman.getAvenger());
 })();
 //# sourceMappingURL=main.js.map
