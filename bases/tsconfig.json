@@ -103,6 +103,6 @@
     "ignoredFiles/*.ts"
   ],
   "include": [
-    "ES6"
+    "Classes"
   ]
 }
