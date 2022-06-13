@@ -42,9 +42,9 @@
         
     }
 
-    const wolverine = new Xmen('Wolverine', 'Logan', true)
+    //const wolverine = new Xmen('Wolverine', 'Logan', true)
 
-    wolverine.fullName = 'Fe';
-    console.log(wolverine.fullName)
+    //wolverine.fullName = 'Fe';
+    //console.log(wolverine.fullName)
     //wolverine.getFullNamefromXmen()
 })()
