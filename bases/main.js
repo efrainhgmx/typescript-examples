@@ -37,12 +37,21 @@
             this.isMutan = isMutan;
             console.log('Constructor Xmen llamado');
         }
+        get fullName() {
+            return `${this.name} - ${this.realName}`;
+        }
+        set fullName(name) {
+            if (name.length < 3) {
+                throw new Error('El nombre debe ser minimo de 4 caracteres');
+            }
+            this.name = name;
+        }
         getFullNamefromXmen() {
             console.log(super.getFullName());
         }
     }
     const wolverine = new Xmen('Wolverine', 'Logan', true);
-    console.log(wolverine);
-    wolverine.getFullNamefromXmen();
+    wolverine.fullName = 'Fe';
+    console.log(wolverine.fullName);
 })();
 //# sourceMappingURL=main.js.map
