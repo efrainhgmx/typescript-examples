@@ -1,8 +1,10 @@
+import { InfoDay } from '../../../../IBWP2/players-ui/src/components/molecules/VenueDetailsOpeningTime/style';
 (() => {
     interface Client {
         name: string;
         age: number;
         address: Address;
+        getFullAdress(id: number):string;
     }
 
     interface Address {    
@@ -18,6 +20,9 @@
             id: 123,
             zip: 'XYC90',
             city: 'London'
+        },
+        getFullAdress(id: number) {
+            return this.address.city
         }
     };
 
