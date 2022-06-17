@@ -1,4 +1,3 @@
-import { InfoDay } from '../../../../IBWP2/players-ui/src/components/molecules/VenueDetailsOpeningTime/style';
 (() => {
     interface Client {
         name: string;

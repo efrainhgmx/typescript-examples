@@ -1,7 +1,4 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 (() => {
     let flash = {
         name: 'Barry Allen',
@@ -32,5 +29,25 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
         }
     }
     const wolverine = new Mutant(25, 'Wolverine', 'Logan');
+})();
+(() => {
+    const client = {
+        name: 'Fernando',
+        age: 25,
+        address: {
+            id: 123,
+            zip: 'XYC90',
+            city: 'London'
+        },
+        getFullAdress(id) {
+            return this.address.city;
+        }
+    };
+})();
+(() => {
+    let addNumbers;
+    addNumbers = (a, b) => {
+        return a + b;
+    };
 })();
 //# sourceMappingURL=main.js.map
