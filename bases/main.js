@@ -17,4 +17,15 @@
         }
     };
 })();
+(() => {
+    const client = {
+        name: 'Fernando',
+        age: 25,
+        address: {
+            id: 123,
+            zip: 'XYC90',
+            city: 'London'
+        }
+    };
+})();
 //# sourceMappingURL=main.js.map
