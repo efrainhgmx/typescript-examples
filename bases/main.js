@@ -20,6 +20,19 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
         }
     };
 })();
+(() => {
+    class Mutant {
+        constructor(age, name, realName) {
+            this.age = age;
+            this.name = name;
+            this.realName = realName;
+        }
+        mutanPower(id) {
+            return this.name + ' ' + this.realName;
+        }
+    }
+    const wolverine = new Mutant(25, 'Wolverine', 'Logan');
+})();
 define("IBWP2/players-ui/src/components/molecules/VenueDetailsOpeningTime/style", ["require", "exports", "styled-components", "styles"], function (require, exports, styled_components_1, styles_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
