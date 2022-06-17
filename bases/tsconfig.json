@@ -103,6 +103,6 @@
     "ignoredFiles/*.ts"
   ],
   "include": [
-    "Classes"
+    "interfaces"
   ]
 }
