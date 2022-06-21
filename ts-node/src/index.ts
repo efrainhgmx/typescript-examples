@@ -1,13 +1,11 @@
-import { Hero } from './classes/Hero';
-/* import * as HeroClasses from './classes/Hero';
-import powers from './data/powers'; */
+import { printObject, genericFunction } from './generics/generics';
+printObject(123);
+printObject(new Date());
+printObject([1,2,3]);
+printObject({a: 'a'})
 
-console.log('Hola Mundo!!!');
-//const Hero: number = 123;
-const ironman = new Hero('Tony Stark', 10, 45);
-
-console.log(ironman.power)
-
+console.log(genericFunction(3.14).toFixed(2));
+console.log(genericFunction('Hola mundo').toFixed(2));
 
 
 
