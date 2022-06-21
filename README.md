@@ -65,3 +65,16 @@ Siempre va al final de las llaves de configuracion:
   ], "include": [
   "src"
   ]`
+
+  ## Tipos de Datos en TS
+  TypeScript, nos permite tipar y dar super poderes a JavaScript, nos permite crear una mejor documentación y un mejor manejo de errores a la hora de escribir código.
+
+  **Existen varías maneras de tipar en TS y aquí te muestro algunas:**
+
+  ### String
+
+Al tipar cualquier tipo de dato, hay que ponerlo antes de inicializar una variable seguido de **:** y luego el tipo de dato.
+
+  ```typescript
+const batman :string = 'Batman';
+```
