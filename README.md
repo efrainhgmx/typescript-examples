@@ -121,6 +121,35 @@ Básicamente **any** permite asignar cualquier tipo de dato sin ninguna restricc
 
 ```
 
+### - Arrays
+
+Podemos definir tipos de datos para los arrays y tener un mejor control de los mismos.
+
+```typescript
+const users : string[] = ['Lalo', 'Marian', 'Carla'];
+const ids: number[] = [1,2,2];
+const listItems: (string | number | boolean)[] = [1, true, 'A', false, 3.1416];
+
+```
+### - Tupplas o Tuples
+
+Las tuplas son una regla que nos permite definir la estructura presisa de un arreglo:
+
+```typescript
+const hero: [string, number, boolean] = ['Dr Strange', 100, true];
+
+    hero[0] = 'Iron Man';
+    hero[1] = 50;
+    hero[2] = false;
+
+const villian : [string, number, boolean, number[]] = ['Dormamu', 150, false, [1,2,3]];
+```
+
+```typescript
+
+
+```
+
 ```typescript
 
 
