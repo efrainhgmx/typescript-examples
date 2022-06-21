@@ -71,10 +71,36 @@ Siempre va al final de las llaves de configuracion:
 
   **Existen varías maneras de tipar en TS y aquí te muestro algunas:**
 
-  ### String
+  ### - String
 
 Al tipar cualquier tipo de dato, hay que ponerlo antes de inicializar una variable seguido de **:** y luego el tipo de dato.
 
   ```typescript
 const batman :string = 'Batman';
+let joker:string;
+
+joker = 'Joker';
+
+```
+### - Numbers
+
+```typescript
+const age: number = 45;
+```
+
+### - Boolean
+
+```typescript
+const isLoading: boolean = false;
+```
+
+
+```typescript
+
+
+```
+
+```typescript
+
+
 ```
