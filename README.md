@@ -94,9 +94,30 @@ const age: number = 45;
 const isLoading: boolean = false;
 ```
 
+### - Null - Unefined
+
+No es muy común el uso de tipar **null** o **undefined** pero es un tipo de dato que podemos controlar tambien en TS.
 
 ```typescript
+let isActive: null =  null;
+const isOn: undefined = undefined;
 
+```
+
+### - Any
+
+Any nos permite tener el control total del dato pero perdemos la ayuda y el sentido de TS.
+
+Básicamente **any** permite asignar cualquier tipo de dato sin ninguna restricción
+
+**NOTA: No se recomienda usar nunca any a menos que sepamos lo que hacemos, el uso desmedido de any puede crear que perdamos el control del código y si algo falla sea muy dificil de capturar. SOLO SE DEBE USAR EN CASOS EXTRAORDINARIOS PERO ES MEJOR EVITARLO**
+```typescript
+  let item : any;
+  item = 'Hola';
+  item = 123;
+  item = { a: 'A' }
+  item = ['🚀', '📲', '📈'];
+  item = () => console.log('Hola');
 
 ```
 
