@@ -1,4 +1,4 @@
-# typescript-examples
+# TypeScript Guía
 Guía para el uso correcto y avanzado de TypeScript
 
 ### Comandos más utilizados
@@ -30,23 +30,23 @@ Modo watch: Transpila en tiempo real los archivos modificados;
 `$ tsc -w`
 
 
-## ¿Configuraciones de tsconfig.json
-La presencia de *tsconfig.json* indica la raíz del proyecto y la compilción de ciertos archivos, nombre de archivo de salida y ficheros a excluir.
+## Configuraciones de tsconfig.json
+La presencia de *tsconfig.json* indica la raíz del proyecto y la compilación de ciertos archivos, nombre de archivo de salida y ficheros a excluir.
 
 **NOTA: Usalmente, el archivo tsconfig.json no requiere de una configuración especial, ya que usar herramientas como React, Angular, etc... ya tienen esa configuración**
 
 #### ¿Cómo hacer debug de los archivos ts en lugar de js?
-Basta con habilitar el siguiente parametro dentro del archivo de configuracion:
+Basta con habilitar el siguiente parametro dentro del archivo de configuración:
 
 `"sourceMap": true, `
 
 #### Remover los comentarios en el archivo de salida
-Basta con habilitar el siguiente parametro dentro del archivo de configuracion:
+Basta con habilitar el siguiente parametro dentro del archivo de configuración:
 
 `"removeComments": true, `
 
 #### Definir un solo archivo de salida js
-Basta con habilitar el siguiente parametro dentro del archivo de configuracion con la ruta y nombre del archivo de salida:
+Basta con habilitar el siguiente parametro dentro del archivo de configuración con la ruta y nombre del archivo de salida:
 
 `"outFile": "./main.js" `
 
