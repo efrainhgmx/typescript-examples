@@ -131,7 +131,7 @@ const ids: number[] = [1,2,2];
 const listItems: (string | number | boolean)[] = [1, true, 'A', false, 3.1416];
 
 ```
-### - Tupplas o Tuples
+### - Tuplas o Tuples
 
 Las tuplas son una regla que nos permite definir la estructura presisa de un arreglo:
 
@@ -144,6 +144,49 @@ const hero: [string, number, boolean] = ['Dr Strange', 100, true];
 
 const villian : [string, number, boolean, number[]] = ['Dormamu', 150, false, [1,2,3]];
 ```
+
+### - Enums o Enumeraciones
+
+Los enums nos permite escojer una opción entre varias en los tipos de datos. Permite trabajar con un valor "semantico" a la hora de leer código.
+
+```typescript
+
+enum AudioLevel {
+        min,  //0
+        medium, //1
+        max  //2
+}
+
+enum AudioLevel {
+        min = 1,
+        medium, //2
+        mediumMin, // 3
+        max= 10
+  }
+
+```
+
+Las enumeraciones crean un valor semantico como el de las posiciones de un array.  
+CUANDO EL VALOR NO SE PONE DE MANERA IMPLICITA, SE COLOCA EL VALOR QUE LE SEDE EN SU POSICION.
+
+
+```typescript
+
+
+```
+
+
+```typescript
+
+
+```
+
+
+```typescript
+
+
+```
+
 
 ```typescript
 
