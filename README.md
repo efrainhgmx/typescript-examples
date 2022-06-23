@@ -195,7 +195,7 @@ Tanto function y void son para referenciar o tipar funciones en TS. Pero **void*
     }
 
 ```
-
+### - Never
 
 ```typescript
 
