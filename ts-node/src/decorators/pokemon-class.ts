@@ -10,6 +10,14 @@ const printToConsoleConditional = (print: boolean = false):Function => {
     }
 }
 
+
+const blockPrototype = function (constructor: Function) {
+    Object.seal( constructor );
+    Object.seal( constructor.prototype );
+}
+
+//Los decoradores se ejeutan de manera secuencial
+@blockPrototype
 @printToConsoleConditional(true)
 export class Pokemon {
 
