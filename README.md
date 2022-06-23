@@ -197,8 +197,26 @@ Tanto function y void son para referenciar o tipar funciones en TS. Pero **void*
 ```
 ### - Never
 
-```typescript
+Never es un tipo de dato, que hace referencia a las funciones que NO DEBEN TERMINAR EXITOSAMENTE, es decir, siempre deben arrojar un error y podemos usarlo de esta manera:
 
+```typescript
+const failFunction = ():never => {
+  throw new Error('La función falló o genero un fallo');
+};
+
+failFunction();
+
+//O usar never para controlar un fallo mejor tipado;
+
+function showMessage(message: string):( never | string ) {
+  if(message.lenght < 5) {
+    throw new Error('Mensaje muy corto');
+  } else {
+    return message;
+  }
+}
+
+showMessage('Hola mundo!!!');
 
 ```
 
