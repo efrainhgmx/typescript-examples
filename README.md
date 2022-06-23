@@ -169,9 +169,30 @@ enum AudioLevel {
 Las enumeraciones crean un valor semantico como el de las posiciones de un array.  
 CUANDO EL VALOR NO SE PONE DE MANERA IMPLICITA, SE COLOCA EL VALOR QUE LE SEDE EN SU POSICION.
 
+### - Fuction y Void
+
+Tanto function y void son para referenciar o tipar funciones en TS. Pero **void** en especifico, hace refencia a una función que no retorna nada:
 
 ```typescript
+//Void signfica "vacio", es decir hace referencia a una funcion que...
 
+//...no retorna nada o undefined, es buena práctica documentar de esta manera.
+
+    function callBatman():void {
+        return;
+    }
+
+    const callSuperman: Function = ():void => {
+        return;
+    }
+
+    const a = callBatman()
+    console.log(a)
+
+    //Aquí especificamos el tipo de salida diferente a void
+    const returnHello: Function = () :string => {
+      return 'Hola mundo!!';
+    }
 
 ```
 
