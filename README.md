@@ -221,8 +221,22 @@ showMessage('Hola mundo!!!');
 ```
 
 
-```typescript
+### - Parametros opcionales y requeridos en Funciones.
 
+En TS podemos pedir argumentos lo cuales decidir cuales son obligatorios u opcionales
+
+**NOTA: un argumento opcional NO puede ir antes de un argumento requerido a menos que este este inicializado.**
+
+```typescript
+const fullName = (
+  firstName: string, 
+  lastName: string, 
+  age?: number
+): string => {
+        return (age) 
+          ? `${firstName} ${lastName} ${age}` 
+          : `${firstName} ${lastName} `;
+    };
 
 ```
 
