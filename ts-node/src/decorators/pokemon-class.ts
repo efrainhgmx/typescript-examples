@@ -20,7 +20,7 @@ const blockPrototype = function (constructor: Function) {
 // que retorna otra funcion:
 function CheckValidPokemonId() {
     return function(target: any, propertyKey: string, descriptor: PropertyDecorator) {
-        console.log({target, propertyKey, descriptor});
+        //console.log({target, propertyKey, descriptor});
 
         const orginialMethod = descriptor.value;
 
@@ -34,11 +34,35 @@ function CheckValidPokemonId() {
     }
 }
 
+
+function readOnly(isWritable: boolean = true): Function {
+    //El propery descriptor solo se recibe en los métodos, cuando se decora una propiedad este es undefined
+    return function(target: any, propertyKey: string) {
+        //console.log({target, propertyKey });
+
+        const descriptor: PropertyDescriptor = {
+            get() {
+                return 'Fernando'
+            }, 
+            set(this, value) {
+                //console.log("value", this, value);
+                Object.defineProperty( this, propertyKey, {
+                    value,
+                    writable: !isWritable,
+                    enumerable: false
+                })
+            }
+        }
+
+        return descriptor;
+    }
+}
 //Los decoradores se ejeutan de manera secuencial
 @blockPrototype
 @printToConsoleConditional(true)
 export class Pokemon {
 
+    @readOnly()
     public publicApi: string = 'https://pokeapi.co/';
 
     constructor(
