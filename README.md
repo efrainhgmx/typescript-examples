@@ -258,7 +258,44 @@ const fullName = (firstName: string, ...args: string[]):string => {
     console.log(superman)
 
 ```
+### - Objetos
 
+Existe una manera muy facil de tipar la estructura de un objeto literal y es de la siguiente manera:
+
+```typescript
+
+let flash:{ name: string, age?: number, powers: string[], getName?: () => string } = {
+        name: 'Barry Allen',
+        age: 24,
+        powers: ['Super Velocidad', 'Viajar en el tiempo']
+    }
+
+flash = {
+    name: 'Otro nombre',
+    age: 25,
+    powers: ['Volar', 'Cantar'],
+    getName() {
+        return this.name;
+    }
+}
+
+console.log(flash.getName())
+```
+### - Type
+
+```typescript
+
+
+```
+
+```typescript
+
+
+```
+```typescript
+
+
+```
 ```typescript
 
 
