@@ -240,9 +240,22 @@ const fullName = (
 
 ```
 
+### - Parametros REST o rest arguments en funciones.
+
+Los rest arguments es la manera de mandar más argumentos que no esten definidos en una función.
+
+En JavaScript es posible hacerlo con el operador rest que se el siguiente: **...** seguido del nombre de la variable, es muy común encontrarlo como **...args**
+pero puede tener otra valor como: **...rest**, **...data**, etc:
 
 ```typescript
+const fullName = (firstName: string, ...args: string[]):string => {
 
+        return `${firstName} ${args.join(' ')}`;
+
+    }
+
+    const superman =  fullName('Clark', 'Joseph', 'Ken');
+    console.log(superman)
 
 ```
 
