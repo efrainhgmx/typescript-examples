@@ -348,11 +348,27 @@ Las interfaces, son un una regla que nos permite tipar objetos
     }
 ```
 
+#### DIFERENCIA ENTRE TYPE E INTERFACE
 
+Los **Type** y las **Interface** en TS son practicamente lo mismo, no hay una diferencia sustancial, por lo que depende del desarrollador el uso de uno u otro.
+
+**LA DIFERENCIA NOTABLE** es que los tipos no pueden tener "herencia" o extender de uno ya definido, en cambio las interfaces pueden heredar de otra:
 
 ```typescript
+  interface Animal {
+    name: string;
+    age: number;
+  }
 
+  interface Bird extends Animal {
+    canFly: boolean;
+  }
 
+  const tucan: Bird = {
+    name: 'Tucan',
+    age: 7,
+    canFly: true
+  }
 ```
 ```typescript
 
