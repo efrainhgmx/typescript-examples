@@ -370,6 +370,40 @@ Los **Type** y las **Interface** en TS son practicamente lo mismo, no hay una di
     canFly: true
   }
 ```
+
+### - namespaces
+
+Los **namespaces** son pequeños programas que nos permiten exportar el bloque de código que queremos sea accesible desde otros archivos. Lo cual nos permite tener un mejor control y manejo de los mismos.
+
+```typescript
+
+//AHORA TODO EL SIGUIENTE BLOQUE PUEDE SER IMPORTADO O SE PUEDE TENER ACCESO
+namespace Validations {
+    //Los namespace son pequeños programas
+    //que solo exporta lo que quiere que sea de acceso de afuera
+    export const validateText = (text: string):boolean => {
+       return (text.length > 3) 
+       ? true
+        : false ;
+    }
+
+    const validateDate = (myDate: Date): boolean => {
+        return (isNaN(myDate.valueOf())) ? false : true;
+    }
+}
+
+```
+
+```typescript
+
+
+```
+
+```typescript
+
+
+```
+
 ```typescript
 
 
