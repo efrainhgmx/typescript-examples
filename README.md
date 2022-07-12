@@ -394,8 +394,28 @@ namespace Validations {
 
 ```
 
-```typescript
+### - Clases
 
+La forma de tipar clases en TS es muy sencilla. 
+Para saber más sobre Clases en JavaScript mira aqui: [Clases en JavaScript](https://github.com/efrainhgmx/classes-in-javascript)
+
+Podemos definir atributos publicos y privados, los cuales los públicos pueden ser accedidos desde fuera de la clase y los privados solo dentro de la misma.
+
+```typescript
+class Avenger {
+  public name: string;
+  public age: number;
+  private realName: string;
+}
+
+// el no definir el tipo se intuye que es publico
+
+class Avenger {
+  //Atributo publico
+  name: string;
+  //Atributo privado
+  private age: number;
+}
 
 ```
 
