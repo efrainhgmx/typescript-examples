@@ -508,8 +508,33 @@ class Apocalipsis {
 
 ```
 
-```typescript
+#### - Clases Abstractas
 
+Las clases abstractas sirven para crear otras clases (Como si fuera un cascaron) y que realmente ejecuten instancias que se esperan.
+No es posible crear instancias de una clase abstracta, esto solo aplica para nuevas clases.
+
+```typescript
+ abstract class Mutant {
+        constructor(
+            public name: string,
+            public realName: string
+        ) {}
+    }
+
+    class Xmen extends Mutant {
+        salvarMundo() {
+            return `Mundo salvado`;
+        }
+    }
+    class Viilian extends Mutant {
+        conquistarMundo() {
+            return `Mundo conquistado !!!`
+        }
+    }
+
+    const storm: Mutan = new Mutan('Storm', 'Storm'); //Error no se puede crear una instancia de una clase abstracta.
+    const wolverine: Xmen = new Xmen('Wolverine', 'Logan');
+    const magneto : Viilian = new Viilian('Magneto', 'Magnus');
 
 ```
 
