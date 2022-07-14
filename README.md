@@ -538,8 +538,22 @@ No es posible crear instancias de una clase abstracta, esto solo aplica para nue
 
 ```
 
-```typescript
+### - Funciones Genericas en TS
 
+La funciones genericas en TS, no es más que una funcion que recibe un tipo de dato y regresa el mismo tipo de dato.
+Es muy útil cuando se tipan APIs o ciertas funciones en particular. Normalmente se usa la expresion **<T>** pero realmente puede tener cualquier nombre:
+
+Mira la carpeta [ts-node](https://github.com/efrainhgmx/typescript-examples/tree/main/ts-node) para ver ejemplos.
+
+```typescript
+function genericFunction<T>(argunment: T):T {
+    return argunment;
+}
+
+
+const genereFucntionArrow = <T>(argument: T): T => {
+    return argument;
+}
 
 ```
 
