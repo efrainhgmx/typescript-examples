@@ -557,6 +557,30 @@ const genereFucntionArrow = <T>(argument: T): T => {
 
 ```
 
+## - DECORADORES
+Un decorador no es más que una función que se ejecuta en tiempo de compilación o momento de traspilación.
+Básicamente es una función que se utiliza para expandir o añadir funcionalidades a objetos.
+
+Para saber más sobre los deocradores, visita la documentación oficial de [decoradores en TypeScript](https://www.typescriptlang.org/docs/handbook/decorators.html)
+
+**NOTA: No es muy común que te toque crear decoradores, normalmente toca implementarlos y no crearlos. Es común usarlos en frameworks como Angular o en ciertas librerias que los implementan.**
+
+
+```typescript
+
+
+```
+
+```typescript
+
+
+```
+
+```typescript
+
+
+```
+
 ```typescript
 
 
