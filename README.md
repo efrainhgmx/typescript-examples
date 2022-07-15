@@ -590,11 +590,39 @@ La forma "estandar" de crear decoradores, es atraves de funciones tradicionales,
 
 ```
 
+
+### - Factory Decorators
+Una fábrica de decoradores es simplemente una función que devuelve la expresión que llamará el decorador en tiempo de ejecución.
+
+**NOTA: Los Factory Decorators, son funciones que retornan otra función. Estas pueden controlar algo dentro o hacer algo al momento de la traspilacion. Los decoradores SOLO SE EJECUTAN AL MOMENTO DE TRASPILACIÓN O COMPILACIÓN.**
+
+Podemos escribir una fábrica de decoradores de la siguiente manera:
+
 ```typescript
 
+function printToConsole( contructor: Function) {
+        console.log(contructor); //Imprime toda la clase incluso sin crear una instancia
+}
+
+//Definición del decorador
+const printToConsoleConditional = (print?: boolean = false): Function => {
+    if(print) {
+        return printToConsole;
+    } else {
+        return () => {};
+    }
+} 
+
+ @printToConsoleConditional(true)
+    class Pokemon {
+        public publiApi:string =  'https://pokeapi.co';
+
+        constructor(
+            public name: string
+        ){}
+    }
 
 ```
-
 ```typescript
 
 
