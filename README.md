@@ -565,9 +565,28 @@ Para saber más sobre los deocradores, visita la documentación oficial de [deco
 
 **NOTA: No es muy común que te toque crear decoradores, normalmente toca implementarlos y no crearlos. Es común usarlos en frameworks como Angular o en ciertas librerias que los implementan.**
 
+### - Decorador de Clases
+
+La forma "estandar" de crear decoradores, es atraves de funciones tradicionales, pero queda mucho a discreción de usar arrow functions si lo desea.
+
+**NOTA: Los decoradores son considerados alg "experimental" por lo que es posible necesitar habilitar lo siguiente en el ts.config: "experimentalDecorators: true,"**
+
 
 ```typescript
+    //Definicion del decorador:
+    function printToConsole( contructor: Function) {
+        console.log(contructor); //Imprime toda la clase incluso sin crear una instancia
+    }
 
+    //Decorador se ejecuta en el momento que se defina la clase Pokemon
+    @printToConsole
+    class Pokemon {
+        public publiApi:string =  'https://pokeapi.co';
+
+        constructor(
+            public name: string
+        ){}
+    }
 
 ```
 
