@@ -624,8 +624,42 @@ const printToConsoleConditional = (print?: boolean = false): Function => {
     }
 
 ```
-```typescript
 
+### - Decoradores de Métodos
+Es posible crear decoradores para los métodos de las clases:
+
+**NOTA: Los decoradores de metodos, pueden modificar y caerle encima al metodo de original de la clase. Por eso se recomienda guardarlo en una variable como `const orginialMethod = descriptor.value;`**
+
+```typescript
+//Decorador de Método.
+function CheckValidPokemonId() {
+    return function(target: any, propertyKey: string, descriptor: PropertyDecorator) {
+        //console.log({target, propertyKey, descriptor});
+
+        const orginialMethod = descriptor.value;
+
+        descriptor.value = (id: number) => {
+            if(id < 1 || id > 800) {
+                return console.error('El id debe ser mayor a 0 y menor a 800');
+            } else {
+                orginialMethod(id);
+            }
+        }
+    }
+}
+
+export class Pokemon {
+    public publicApi: string = 'https://pokeapi.co/';
+
+    constructor(
+        public name: string
+    ){}
+
+    @CheckValidPokemonId()
+    savePokemonToDB(id: number) {
+        console.log('Pokemon guardado en BD' + ' ' + id);
+    }
+}
 
 ```
 
