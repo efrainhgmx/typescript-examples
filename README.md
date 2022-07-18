@@ -561,7 +561,7 @@ const genereFucntionArrow = <T>(argument: T): T => {
 Un decorador no es más que una función que se ejecuta en tiempo de compilación o momento de traspilación.
 Básicamente es una función que se utiliza para expandir o añadir funcionalidades a objetos.
 
-Para saber más sobre los deocradores, visita la documentación oficial de [decoradores en TypeScript](https://www.typescriptlang.org/docs/handbook/decorators.html)
+Para saber más sobre los decoradores, visita la documentación oficial de [decoradores en TypeScript](https://www.typescriptlang.org/docs/handbook/decorators.html)
 
 **NOTA: No es muy común que te toque crear decoradores, normalmente toca implementarlos y no crearlos. Es común usarlos en frameworks como Angular o en ciertas librerias que los implementan.**
 
@@ -607,12 +607,13 @@ function printToConsole( contructor: Function) {
 //Definición del decorador
 const printToConsoleConditional = (print?: boolean = false): Function => {
     if(print) {
+        //Hace referecia a la función de arriba
         return printToConsole;
     } else {
         return () => {};
     }
 } 
-
+ //Se llama como si fuera una funcion usando parentesis ()
  @printToConsoleConditional(true)
     class Pokemon {
         public publiApi:string =  'https://pokeapi.co';
