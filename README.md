@@ -663,7 +663,51 @@ export class Pokemon {
 
 ```
 
+### - Decorador de propiedades
+
+Podemos crear decoradores para las propiedades, y es posible bloquear ciertas propiedades si es que lo deseamos:
+
+**NOTA: El propertyDescriptor es diferente en propiedades que en los métodos.**
+
 ```typescript
 
+function readOnly(isWritable: boolean = true): Function {
+    //El property descriptor solo se recibe en los métodos, cuando se decora una propiedad este es undefined
+    //Target siempre es any
+    return function(target: any, propertyKey: string) {
+        //console.log({target, propertyKey });
+
+        const descriptor: PropertyDescriptor = {
+            get() {
+                return 'Fernando'
+            }, 
+            set(this, value) {
+                //console.log("value", this, value);
+                Object.defineProperty( this, propertyKey, {
+                    value,
+                    writable: !isWritable,
+                    enumerable: false
+                })
+            }
+        }
+
+        return descriptor;
+    }
+}
+
+class Pokemon {
+
+    //Decorador de Método
+    @readOnly()
+    public publicApi: string = 'https://pokeapi.co/';
+
+    constructor(
+        public name: string
+    ){}
+
+    savePokemonToDB(id: number) {
+        console.log('Pokemon guardado en BD' + ' ' + id);
+    }
+}
 
 ```
